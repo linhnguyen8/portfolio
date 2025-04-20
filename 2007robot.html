@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linh Nguyen Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <nav>
+            <header class="header">
+                <h1 class="name">LINH NGUYEN</h1>
+                <button class="menu-button" id="menuButton">☰</button>
+            </header>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">About</a></li>
+                <li><a href="/experience.html">Experience</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+            </ul>
+            <div class="contact-icons">
+                <a href="mailto:linnie@mit.edu" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/linhnguyen8/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/linhnguyen8" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </nav>
+        <main>
+            <div class="content-wrapper">
+                <div class="page-title">2.007 COMPETITION ROBOT</div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Challenge</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                The 2.007 gameboard features multiple challenges that students' robots can tackle to score points, with time as the primary constraint. This year's theme, Wakanda Forever, was inspired by Black Panther 2 since it was set on MIT's campus.My strategy focused on designing a robot that could consistently score points each round by completing non-competitive tasks. I prioritized two challenges:
+                            </p>
+                            <p>
+                                1. Spinning the Centrifuge Wheels – The gameboard features two centrifuge wheels positioned side by side, with the outer wheel requiring more torque to spin. Points are awarded based on the robot’s ability to reach specific RPM benchmarks, with higher RPMs yielding more points—up to a maximum of 200 RPM. Exceeding this limit results in zero points.
+                            </p>
+                            <p>
+                                2. Pulling the Multiplier – The point multiplier comprised of a hook attached to a rope that requires 40N of force to pull. If fully extended, the multiplier can multiply the robot's total points by 2x.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/2007/gameboard.jpg" alt="2.007 Gameboard">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Torque Speed Measurements</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                To achieve the desired spinner that could spin the centrifuge wheels at the max speed, I conducted torque measurements on each wheel and constructed a prototype spinner using 1 LDO (Linear DC Motor) with various gear ratios. This experimentation provided data for my torque-speed calculations. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/2007/spinner1.jpg" alt="first spinner">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Torque Speed Calculations</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                Utilizing a torque-speed curve and power calculations, I determined the optimal number of LDO motors and the necessary gear ratio to meet the specified speed requirements.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/2007/centrifugecal.jpeg" alt="centrifuge calculations">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Gearbox V1</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                Integrating theoretical and experimental insights, I devised a gearbox system capable of spinning the heavier wheel, establishing a benchmark for designing a dual spinner system that successfully spun the two wheels simultaneously and met the RPM criteria during trial runs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/2007/gearbox.png">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Winch for Multiplier Ring</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                To pull the multiplier hook, I designed a winch system connected to a hook via a string. The motor-driven winch provides a mechanical advantage, generating the necessary force to pull the multiplier ring efficiently.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/2007/winch.png">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Carabiner Hook for Multiplier Ring</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                The one fixed to the robot and another detachable hook that latches onto the multiplier ring. Inspired by a carabiner, I engineered a secure and easy-to-attach hook connected to the winch via a string.
+                                The process works as follows: The robot attaches its carabiner-style hook to the multiplier ring, then drives away to tension the system while latching its second hook onto the gameboard railings. Once positioned, the winch is actuated, pulling the multiplier ring toward the robot and activating the 2x score multiplier.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/2007/carabiner.png">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Gearbox V2</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                For the final integrated design of the spinners onto my robot's body, I chose to make a lighter version of my Gearbox V1, where I mounted the LDO motors and its gear train onto sheet metal plates that can be easily removed from my robot's chassis body to ensure that the components can be switched out easily if there is an issue. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/2007/gearboxV2.png">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Front View</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/2007/robotfront.jpeg">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Back View</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/2007/robotback.jpeg">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Side View</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/2007/robotside.jpeg">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
