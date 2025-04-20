@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linh Nguyen Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <nav>
+            <header class="header">
+                <h1 class="name">LINH NGUYEN</h1>
+                <button class="menu-button" id="menuButton">☰</button>
+            </header>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">About</a></li>
+                <li><a href="/experience.html">Experience</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+            </ul>
+            <div class="contact-icons">
+                <a href="mailto:linnie@mit.edu" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/linhnguyen8/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/linhnguyen8" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </nav>
+        <main>
+            <div class="content-wrapper">
+                <div class="page-title">OPTICAL DENSITY SENSOR</div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Background</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                I worked in the CAD lab under the guidance of Charlene Xia during the summer of 2022. I was tasked to create an inexpensive modular optical density sensor system that autonomously measures the density of spirulina grown in artificial environments.
+                            </p>
+                            <p>
+                                An optical density sensor quantifies the density of a liquid sample with the intensity of the light that passes through the sample and the intensity of light before it enters the sample. However, many commercial optical density sensors are expensive, which is a hindrance in accessibility to biological research.
+
+                            </p>
+                            <p>
+                                The purpose of this device was to analyze how climate change affects spirulina, a blue-green algae that is a source of food for many aquatic species and has a spiral shape that changes with respect to increases in water temperature.
+                            </p>
+                            <p>
+                                The device is made up of three components: a 3D printed fluid channel and casing, Peristaltic Pump with a L298N Motor Driver, Arduino Nano 33 IoT with Breadboard—all assembled on a lego base plate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/odsensor/odbackground.jpg" alt="Optical Density Sensor">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Fluid Channel</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                I designed a clear channel that allowed for water containing the spirulina to flow through and had nosal at each end that attached to a peristaltic pump that pumped water through the OD sensor. The clear channel was sandwiched by two 3D printed casings that contained openings for a red LED and 3 photoresistors that measure transmission, reflection, and calibration.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/odsensor/fluid-split.png" alt="first spinner">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Sensor Enclosure</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                The clear channel was sandwiched by two 3D printed casings that contained openings for a red LED and 3 photoresistors that measure transmission, reflection, and calibration.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/odsensor/sensor-assem-split.png" alt="centrifuge calculations">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Lego Modularity</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                A key feature of the fluid channel-sensor system is its enclosure, designed to fit onto a standardized LEGO base plate. This modular design enables seamless integration of additional optical density sensors with different LEDs, allowing for future expansion and alignment on the LEGO board as needed.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/odsensor/lego.png">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Autonmizing Pump</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                I reversed engineered an existing peristaltic pump and replaced its step motor with a L298N Motor Driver in order to permit the device to be controlled autonomously with an Arduino. Programming in C++, I designed software that collected both serial plotting data of the values read and the serial monitor data and automatically saved them in a CSV file for further analysis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/odsensor/pump.png">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Final Assembly</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="img/projects/od-sensor.jpg">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
