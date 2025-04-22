@@ -146,7 +146,14 @@ main a {
 .portfolio-title {
     display: block;
     font-size: 1.75rem;
+    font-weight: 400;
     padding: 3px;
+}
+
+.portfolio-subtitle {
+    padding: 3px;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .portfolio-gallary {
