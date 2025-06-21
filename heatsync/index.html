@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeatSync</title>
+    <link rel="icon" type="image/png" href="img/profile/face-icon.png">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <nav>
+            <header class="header">
+                <h1 class="name">LINH NGUYEN</h1>
+                <button class="menu-button" id="menuButton">☰</button>
+            </header>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">About</a></li>
+                <li><a href="/experience/">Experience</a></li>
+                <li><a href="/projects/">Projects</a></li>
+            </ul>
+            <div class="contact-icons">
+                <a href="mailto:linnie@mit.edu" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/linhnguyen8/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/linhnguyen8" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </nav>
+        <main>
+            <div class="content-wrapper">
+                <div class="page-title">HEATSYNC: CAMPUS WEATHER MONITORING SYSTEM</div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Project Overview</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                <a href="https://efi.mit.edu/spring25/information" target="_blank">6.900</a> (Engineering for Impact) is an advanced systems design course at MIT where teams of students build full-stack hardware-software solutions for real-world partners.
+                            </p>
+                            <p>
+                                Working in a team of 8, we developed HeatSync, a portable, low-cost weather monitoring system developed for MIT's Office of Sustainability to provide localized weather data across campus. 
+                            </p>
+                            <p>
+                                This project addresses a critical issue: Boston's heat emergencies are declared using airport weather data, which doesn't accurately represent conditions in dnderserved urban neighborhoods, which often experience significantly higher temperatures than reported by distant weather stations, leading to inadequate heat emergency responses and public health risks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="/img/projects/6900/HeatSyncTeamPic.JPG" alt="HeatSync Team Pic">
+                        <img src="/img/projects/6900/enclosure.png" alt="HeatSync Unit">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Industrial Design Subteam (Lead)</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                As the Industrial Design team lead, I was responsible for:
+                            </p>
+                            <ul>
+                                <li><strong>Enclosure Design & CAD:</strong> Led the design and iteration of all enclosure versions, reducing final size by 30% while maintaining functionality</li>
+                                <li><strong>Component Integration:</strong> Ensured seamless integration of electronics, sensors, and user-facing elements</li>
+                                <li><strong>Field Testing Coordination:</strong> Organized and participated in field testing to validate design performance</li>
+                                <li><strong>Manufacturing Oversight:</strong> Managed 3D printing, post-processing, and assembly of six production units</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="/img/projects/6900/components.png" alt="HeatSync Components">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Sensor Subteam</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                As a member of the Sensors team, I contributed to:
+                            </p>
+                            <ul>
+                                <li><strong>Sensor Selection:</strong> Evaluated temperature/humidity sensors based on accuracy (±0.28°C), cost (<$1.50), and environmental requirements</li>
+                                <li><strong>Custom PCB Design:</strong> Designed and assembled custom PCBs for sensor prototyping and testing</li>
+                                <li><strong>Radiation Shield Validation:</strong> Conducted controlled experiments proving radiation shields improve measurement accuracy at high temperatures</li>
+                                <li><strong>Field Performance Analysis:</strong> Compared sensor performance against commercial HOBO data loggers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="/img/projects/6900/veml.png" alt="Sensors Subteam">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Sensor Specifications (*** means higher priority)</div>
+                        <div class="portfolio-bullets">
+                            <ul>
+                                <li>
+                                    It should accurately measure the air temperature and humidity, with dynamics appropriate for the use case.***
+                                </li>
+                                <li>
+                                    It should measure ground surface temperature, with dynamics appropriate for the use case.*
+                                </li>
+                                <li>
+                                    Data from a sensor node should be able to be tied to a location.***
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-title">Sensor Selection Criteria</div>
+                        <ul>
+                            <li><strong>Temperature Range & Accuracy:</strong> 20°C–50°C, ±0.28°C (≤ ±0.5°F)</li>
+                            <li><strong>Relative Humidity Range & Accuracy:</strong> 0–100%, ≤ ±2%</li>
+                            <li><strong>Availability:</strong> Must be in stock at DigiKey (non-Marketplace only)</li>
+                            <li><strong>Field Performance Analysis:</strong> 3.3V system compatibility</li>
+                            <li><strong>Power Consumption:</strong> ≤ 1 mW (typical measurement mode)</li>
+                            <li><strong>Communication:</strong> Must support I²C protocol</li>
+                            <li><strong>Package Type:</strong> SMT packages easy to solder (SOIC, DFN, QFN)</li>
+                            <li><strong>Cost:</strong> ≤ $1.50 per unit at 1,000-unit scale</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-gallary">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Sensor Research, Prototyping, and Field Testing</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                <strong>Sensor Research & Prototyping</strong>
+                            </p>    
+                            <ul>
+                                <li>
+                                    We expanded our sensor scope to include wind and solar sensors for calibration after identifying temperature inaccuracies in the prior year's design.
+                                </li>
+                                <li><strong>Prototyped Sensors:</strong></li>
+                                <ul>
+                                    <li>
+                                        Temp/RH: HS401, DHT22, SHTC3
+                                    </li>
+                                    <li>
+                                        Wind: FS3000-1015
+                                    </li>
+                                    <li>
+                                        Sunlight: VEML7700-TT
+                                    </li>
+                                </ul>
+                                <li>For each sensor, we designed custom PCBs with appropriate passives and connectors for power and I²C, manually assembled them, and conducted field testing to evaluate accuracy and integration feasibility.</li>
+                            </ul>
+                            <p><strong>Sensor Field Testing</strong></p>
+                            <ul>
+                                <li>
+                                    We compared our sensor readings to the HOBO MX2302A, a commercial-grade temperature/humidity logger.
+                                </li>
+                                <li>
+                                    At room temperature, all sensors performed similarly to the HOBO.
+                                </li>
+                                <li>
+                                    The VEML7700-TT was tested under direct sunlight, but wind testing proved difficult due to the FS3000-1015's unidirectional nature.
+                                </li>
+                            </ul>
+                            <p>
+                                <strong>Final Sensor Selection</strong>
+                            </p>
+                            <ul>
+                                <li>
+                                    Since all candidate sensors had similar accuracy specs, we shifted focus toward improving accuracy through enclosure design (e.g., radiation shielding) to help mitigate climate factors that can bias sensor readings
+                                </li>
+                                <li>
+                                    Final Sensor Choices:
+                                </li>
+                                <ul>
+                                    <li>
+                                        <strong>SHT40</strong> for Temp/RH — inexpensive, readily available, and comparable to HOBO.
+                                    </li>
+                                    <li>
+                                        <strong>VEML7700-TT</strong> retained for light sensing to evaluate sun exposure's effect.
+                                    </li>
+                                    <li><strong>FS3000-1015</strong>discarded due to cost, unidirectionality, and pivot away from environmental calibration</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="/img/projects/6900/sensorResearch.png">
+                        <img src="/img/projects/6900/sensorGraph.png">
+                        <img src="/img/projects/6900/sensorGraph2.png">
+                        <img src="/img/projects/6900/sht40.png">
+                        <img src="/img/projects/6900/veml.png">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Industrial Design Specifications (*** means higher priority)</div>
+                        <div class="portfolio-bullets">
+                            <ul>
+                                <li>
+                                    It should be portable and able to be set up by an average person in a variety of outdoor environments on the MIT campus, including on a tripod or attached to poles of various dimensions.***
+                                </li>
+                                <li>
+                                    It should be able to be physically attached to a HOBO MX2302A data logger.*
+                                </li>
+                                <li>
+                                    It should be rugged and able to withstand a summertime Boston-area environment (heat, rain, wind and curious people).***
+                                </li>
+                                <li>Community-engaging design</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-title">Design Iteration from Previous Version</div>
+                        <p>
+                            We retained strengths from last year’s enclosure (e.g., ingress sealing, waterproofing, compactness), while iterating on:
+                        </p>
+                        <ul>
+                            <li><strong>Community Engagement:</strong> Added an E-Paper display to show real-time temperature and Heat Index, plus a QR code linking to a map of all HeatSync devices across campus.</li>
+                            <li><strong>Accuracy at High Temperatures</strong> Added a radiation shield to reduce sun-induced heat distortion.</li>
+                            <li><strong>Modularity:</strong> Designed for easy assembly, debugging, and diverse mounting.</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="/img/projects/6900/enclosureExterior.png">
+                        <img src="/img/projects/6900/enclosureEpaper.png">
+                        <img src="/img/projects/6900/enclosureModular.png">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Radiation Shield Testing</div>
+                        <div class="portfolio-bullets">  
+                            <ul>
+                                <li>
+                                    We tested an open-source radiation shield by comparing a shielded sensor vs. an exposed one under heat (using an incandescent bulb in a covered setup).
+                                </li>
+                                <li>At moderate temperatures, both sensors aligned with the HOBO.</li>
+                                <li>At high temperatures, the shielded sensor outperformed both the unshielded sensor and the HOBO, indicating strong potential for mitigating solar heat distortion.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="/img/projects/6900/sensorLampSetup.jpg">
+                        <img src="/img/projects/6900/sensorLampOn.jpg">
+                    </div>
+                </div>
+                <hr>
+                <div id="work" class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-title">Enclosure V1</div>
+                        <div class="portfolio-bullets">
+                            <ul>
+                                <li>
+                                    Bulky but functional; enabled initial field testing.
+                                </li>
+                                <li>
+                                    Compared radiation-shielded vs. unshielded sensors using MIT Sailing Pavilion data as a benchmark (spring conditions showed minimal difference).
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-title">Enclosure V6 (Final)</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                We iterated through several versions to arrive at a final design that was:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Compact</strong> — Reduced lid and base size by 30%
+                                </li>
+                                <li>
+                                    <strong>Watertight</strong> — Spraypainted white PLA prints; sealed with O-rings, epoxy, and conformal coatings
+                                </li>
+                                <li><strong>Modular</strong> - Mountable via tripod or pole, swappable PCB layers</li>
+                                <li>
+                                    <strong>Engaging</strong> — HeatSync logo, QR code, googly eyes, and E-Paper display
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-title">Main Design Highlights</div>
+                        <div class="portfolio-bullets">
+                            <p>
+                                We iterated through several versions to arrive at a final design that was:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Radiation Shield Connector:</strong> Enabled full shielding with just 2 added plates instead of 6, reducing cost and material.
+                                </li>
+                                <li>
+                                    <strong>Interior Design:</strong>
+                                    <ul>
+                                        <li>Standoffs for quick access and debugging</li>
+                                        <li>Indents to reduce weight</li>
+                                        <li>Interlocking lip for secure assembly</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Exterior Design:</strong>
+                                    <ul>
+                                        <li>Dual mounting options (pole + tripod)</li>
+                                        <li>Weatherproofing: O-rings, spray paint, sealed sensor panels</li>
+                                        <li>Real-time feedback via E-Paper + QR-enabled web dashboard</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Engaging</strong> — HeatSync logo, QR code, googly eyes, and E-Paper display
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallary">
+                        <img src="/img/projects/6900/heatsyncV1.jpg">
+                        <img src="/img/projects/6900/IDSubteam.JPG">
+                        <img src="/img/projects/6900/enclosure.png">
+                        <img src="/img/projects/6900/enclosureSide.png">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
