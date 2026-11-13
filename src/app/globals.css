@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Color scheme carried over from the original site */
+@theme {
+  --color-paper: #f5f5f5;
+  --color-ink: #1a1a1a;
+  --color-muted: #64747b;
+  --color-rule: #dddddd;
+  --color-mit: #750014;
+  --font-sans: var(--font-assistant), Helvetica, Arial, sans-serif;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+/* Inline text links: accent color with a thin underline, like the original */
+.text-link {
+  color: var(--color-muted);
+  font-weight: 500;
+  border-bottom: 1px solid currentColor;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+.text-link:hover {
+  color: var(--color-ink);
+}
+
+/* Load-in animation used by <FadeIn> */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+.fade-in {
+  animation: fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-muted);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
