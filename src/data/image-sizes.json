@@ -1,0 +1,237 @@
+{
+ "/img/projects/2007/carabiner.png": {
+  "src": "/img/projects/sm/2007/carabiner.webp",
+  "width": 224,
+  "height": 194
+ },
+ "/img/projects/2007/centrifugecal.jpeg": {
+  "src": "/img/projects/sm/2007/centrifugecal.jpg",
+  "width": 1400,
+  "height": 642
+ },
+ "/img/projects/2007/gameboard.jpg": {
+  "src": "/img/projects/sm/2007/gameboard.jpg",
+  "width": 384,
+  "height": 512
+ },
+ "/img/projects/2007/gearbox.png": {
+  "src": "/img/projects/sm/2007/gearbox.webp",
+  "width": 1110,
+  "height": 610
+ },
+ "/img/projects/2007/gearboxV2.png": {
+  "src": "/img/projects/sm/2007/gearboxV2.webp",
+  "width": 492,
+  "height": 396
+ },
+ "/img/projects/2007/robotback.jpeg": {
+  "src": "/img/projects/sm/2007/robotback.jpg",
+  "width": 1400,
+  "height": 1050
+ },
+ "/img/projects/2007/robotfront.jpeg": {
+  "src": "/img/projects/sm/2007/robotfront.jpg",
+  "width": 1400,
+  "height": 1050
+ },
+ "/img/projects/2007/robotside.jpeg": {
+  "src": "/img/projects/sm/2007/robotside.jpg",
+  "width": 1400,
+  "height": 1050
+ },
+ "/img/projects/2007/spinner1.jpg": {
+  "src": "/img/projects/sm/2007/spinner1.jpg",
+  "width": 1170,
+  "height": 1332
+ },
+ "/img/projects/2007/winch.png": {
+  "src": "/img/projects/sm/2007/winch.webp",
+  "width": 286,
+  "height": 318
+ },
+ "/img/projects/2009/6-ops.png": {
+  "src": "/img/projects/sm/2009/6-ops.webp",
+  "width": 1373,
+  "height": 1400
+ },
+ "/img/projects/2009/arch-imu.png": {
+  "src": "/img/projects/sm/2009/arch-imu.webp",
+  "width": 838,
+  "height": 506
+ },
+ "/img/projects/2009/architecture.jpg": {
+  "src": "/img/projects/sm/2009/architecture.jpg",
+  "width": 960,
+  "height": 540
+ },
+ "/img/projects/2009/build-2.jpeg": {
+  "src": "/img/projects/sm/2009/build-2.jpg",
+  "width": 933,
+  "height": 1400
+ },
+ "/img/projects/2009/feasibility-market.jpg": {
+  "src": "/img/projects/sm/2009/feasibility-market.jpg",
+  "width": 960,
+  "height": 540
+ },
+ "/img/projects/2009/feasibility-solution.jpg": {
+  "src": "/img/projects/sm/2009/feasibility-solution.jpg",
+  "width": 960,
+  "height": 540
+ },
+ "/img/projects/2009/feasibility.jpg": {
+  "src": "/img/projects/sm/2009/feasibility.jpg",
+  "width": 960,
+  "height": 540
+ },
+ "/img/projects/2009/final-presentation.jpg": {
+  "src": "/img/projects/sm/2009/final-presentation.jpg",
+  "width": 1400,
+  "height": 933
+ },
+ "/img/projects/2009/gonio-case.jpg": {
+  "src": "/img/projects/sm/2009/gonio-case.jpg",
+  "width": 1400,
+  "height": 933
+ },
+ "/img/projects/2009/gonio-phone.jpg": {
+  "src": "/img/projects/sm/2009/gonio-phone.jpg",
+  "width": 1400,
+  "height": 933
+ },
+ "/img/projects/2009/gonio-straps.jpg": {
+  "src": "/img/projects/sm/2009/gonio-straps.jpg",
+  "width": 1400,
+  "height": 933
+ },
+ "/img/projects/2009/tech-review-app.jpg": {
+  "src": "/img/projects/sm/2009/tech-review-app.jpg",
+  "width": 1400,
+  "height": 933
+ },
+ "/img/projects/2009/tech-straps.jpg": {
+  "src": "/img/projects/sm/2009/tech-straps.jpg",
+  "width": 1400,
+  "height": 933
+ },
+ "/img/projects/2009/technical-review.jpg": {
+  "src": "/img/projects/sm/2009/technical-review.jpg",
+  "width": 1400,
+  "height": 933
+ },
+ "/img/projects/2009/yellow-team-pic.jpeg": {
+  "src": "/img/projects/sm/2009/yellow-team-pic.jpg",
+  "width": 1400,
+  "height": 933
+ },
+ "/img/projects/6900/HeatSyncTeamPic.JPG": {
+  "src": "/img/projects/sm/6900/HeatSyncTeamPic.jpg",
+  "width": 1400,
+  "height": 1050
+ },
+ "/img/projects/6900/IDSubteam.JPG": {
+  "src": "/img/projects/sm/6900/IDSubteam.jpg",
+  "width": 1050,
+  "height": 1400
+ },
+ "/img/projects/6900/components.png": {
+  "src": "/img/projects/sm/6900/components.webp",
+  "width": 1246,
+  "height": 846
+ },
+ "/img/projects/6900/enclosure.png": {
+  "src": "/img/projects/sm/6900/enclosure.jpg",
+  "width": 384,
+  "height": 512
+ },
+ "/img/projects/6900/enclosureEpaper.png": {
+  "src": "/img/projects/sm/6900/enclosureEpaper.webp",
+  "width": 1400,
+  "height": 788
+ },
+ "/img/projects/6900/enclosureExterior.png": {
+  "src": "/img/projects/sm/6900/enclosureExterior.webp",
+  "width": 1400,
+  "height": 682
+ },
+ "/img/projects/6900/enclosureModular.png": {
+  "src": "/img/projects/sm/6900/enclosureModular.webp",
+  "width": 1400,
+  "height": 642
+ },
+ "/img/projects/6900/enclosureSide.png": {
+  "src": "/img/projects/sm/6900/enclosureSide.jpg",
+  "width": 384,
+  "height": 512
+ },
+ "/img/projects/6900/heatsyncV1.jpg": {
+  "src": "/img/projects/sm/6900/heatsyncV1.jpg",
+  "width": 1120,
+  "height": 1400
+ },
+ "/img/projects/6900/sensorGraph.png": {
+  "src": "/img/projects/sm/6900/sensorGraph.webp",
+  "width": 1400,
+  "height": 591
+ },
+ "/img/projects/6900/sensorGraph2.png": {
+  "src": "/img/projects/sm/6900/sensorGraph2.webp",
+  "width": 1400,
+  "height": 602
+ },
+ "/img/projects/6900/sensorLampOn.jpg": {
+  "src": "/img/projects/sm/6900/sensorLampOn.jpg",
+  "width": 1400,
+  "height": 1050
+ },
+ "/img/projects/6900/sensorLampSetup.jpg": {
+  "src": "/img/projects/sm/6900/sensorLampSetup.jpg",
+  "width": 1400,
+  "height": 1050
+ },
+ "/img/projects/6900/sensorResearch.png": {
+  "src": "/img/projects/sm/6900/sensorResearch.webp",
+  "width": 1400,
+  "height": 853
+ },
+ "/img/projects/6900/sht40.png": {
+  "src": "/img/projects/sm/6900/sht40.webp",
+  "width": 416,
+  "height": 416
+ },
+ "/img/projects/6900/veml.png": {
+  "src": "/img/projects/sm/6900/veml.webp",
+  "width": 470,
+  "height": 486
+ },
+ "/img/projects/odsensor/od-background.jpg": {
+  "src": "/img/projects/sm/odsensor/od-background.jpg",
+  "width": 512,
+  "height": 287
+ },
+ "/img/projects/odsensor/od-fluid-split.png": {
+  "src": "/img/projects/sm/odsensor/od-fluid-split.webp",
+  "width": 1400,
+  "height": 972
+ },
+ "/img/projects/odsensor/od-lego.png": {
+  "src": "/img/projects/sm/odsensor/od-lego.webp",
+  "width": 840,
+  "height": 980
+ },
+ "/img/projects/odsensor/od-pump.png": {
+  "src": "/img/projects/sm/odsensor/od-pump.webp",
+  "width": 176,
+  "height": 152
+ },
+ "/img/projects/odsensor/od-sensor-assem-split.png": {
+  "src": "/img/projects/sm/odsensor/od-sensor-assem-split.webp",
+  "width": 1400,
+  "height": 908
+ },
+ "/img/projects/p-od-sensor.jpg": {
+  "src": "/img/projects/sm/p-od-sensor.jpg",
+  "width": 1400,
+  "height": 1050
+ }
+}
