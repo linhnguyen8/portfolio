@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { FadeIn } from "@/components/FadeIn";
+import { Photo } from "@/components/Photo";
+import { Reveal } from "@/components/Reveal";
 import { RichText, TextLink } from "@/components/RichText";
 import { projects } from "@/data/projects";
 import type { Metadata } from "next";
@@ -12,27 +12,34 @@ export default function Projects() {
   return (
     <>
       <main className="mx-auto w-full max-w-5xl px-6 py-12 sm:px-10 sm:py-16 lg:py-20">
-        <FadeIn>
+        <Reveal variant="drop">
           <a href="/" className="text-link">← linh nguyen</a>
+        </Reveal>
+        <Reveal variant="drop" delay={0.07}>
           <h1 className="mt-10 text-3xl font-light tracking-wide">projects</h1>
-        </FadeIn>
+        </Reveal>
 
         <ol className="mt-12">
           {projects.map((p, i) => (
-            <FadeIn key={p.title} delay={Math.min(i, 3) * 0.08}>
-              <li className="grid gap-6 border-t border-rule py-10 md:grid-cols-[3rem_1fr_minmax(0,22rem)] md:gap-8">
+            <Reveal
+              key={p.title}
+              as="li"
+              delay={0.18 + i * 0.1}
+              className="grid gap-6 border-t border-rule py-10 md:grid-cols-[3rem_1fr_minmax(0,22rem)] md:gap-8"
+            >
                 <span className="hidden pt-1.5 text-xs font-medium tracking-wider text-muted tabular-nums md:block">
                   {pad(i + 1)}
                 </span>
 
                 {/* Photo first on mobile, right column on desktop */}
-                <Image
+                <Photo
                   src={p.image.src}
                   alt={p.image.alt}
                   width={p.image.width}
                   height={p.image.height}
                   sizes="(min-width: 768px) 22rem, 100vw"
-                  className="max-h-80 w-full rounded-sm object-cover md:order-last md:max-h-72"
+                  wrapClassName="self-start md:order-last"
+                  className="max-h-80 object-cover md:max-h-72"
                 />
 
                 <div className="max-w-prose">
@@ -61,8 +68,7 @@ export default function Projects() {
                     </p>
                   )}
                 </div>
-              </li>
-            </FadeIn>
+            </Reveal>
           ))}
         </ol>
       </main>
