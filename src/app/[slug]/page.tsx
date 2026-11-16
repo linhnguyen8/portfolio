@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { FadeIn } from "@/components/FadeIn";
+import { Photo as BasePhoto } from "@/components/Photo";
+import { Reveal } from "@/components/Reveal";
 import { RichText } from "@/components/RichText";
 import { caseStudies, type Block, type Bullet, type Img } from "@/data/case-studies";
 import sizes from "@/data/image-sizes.json";
@@ -26,16 +27,7 @@ function Photo({ img }: { img: Img }) {
   const s = (sizes as Record<string, { src: string; width: number; height: number }>)[img.src];
   return (
     <figure>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={s?.src ?? img.src}
-        width={s?.width}
-        height={s?.height}
-        alt={img.alt}
-        loading="lazy"
-        decoding="async"
-        className="h-auto w-full rounded-sm"
-      />
+      <BasePhoto src={s?.src ?? img.src} width={s?.width} height={s?.height} alt={img.alt} />
       {img.caption && <figcaption className="mt-1.5 text-xs text-muted">{img.caption}</figcaption>}
     </figure>
   );
@@ -75,20 +67,26 @@ export default async function CaseStudyPage({ params }: Params) {
 
   return (
     <main className="mx-auto w-full max-w-5xl px-6 py-12 sm:px-10 sm:py-16 lg:py-20">
-      <FadeIn>
+      <Reveal variant="drop">
         <a href="/projects/" className="text-link">← projects</a>
+      </Reveal>
+      <Reveal variant="drop" delay={0.07}>
         <h1 className="mt-10 text-3xl font-light tracking-wide lowercase">{study.title}</h1>
         {study.subtitle && <p className="mt-2 text-lg font-light">{study.subtitle}</p>}
         <p className="mt-1 text-sm text-muted lowercase">{study.meta}</p>
-      </FadeIn>
+      </Reveal>
 
       <ol className="mt-12">
         {study.sections.map((section, i) => {
           const hasText = !!section.blocks?.length;
           const images = section.images ?? [];
           return (
-            <FadeIn key={section.heading} delay={Math.min(i, 2) * 0.08}>
-              <li className="grid gap-6 border-t border-rule py-10 md:grid-cols-[3rem_1fr_minmax(0,22rem)] md:gap-8">
+            <Reveal
+              key={section.heading}
+              as="li"
+              delay={0.18 + i * 0.1}
+              className="grid gap-6 border-t border-rule py-10 md:grid-cols-[3rem_1fr_minmax(0,22rem)] md:gap-8"
+            >
                 <span className="hidden pt-1 text-xs font-medium tracking-wider text-muted tabular-nums md:block">
                   {pad(i + 1)}
                 </span>
@@ -124,8 +122,7 @@ export default async function CaseStudyPage({ params }: Params) {
                     ))}
                   </div>
                 )}
-              </li>
-            </FadeIn>
+            </Reveal>
           );
         })}
       </ol>

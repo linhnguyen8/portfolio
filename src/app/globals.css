@@ -32,19 +32,80 @@ body {
   color: var(--color-ink);
 }
 
-/* Load-in animation used by <FadeIn> */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
+/* ───────────────────────── Motion ─────────────────────────
+   Everything below only hides content while <html> has the "js" class,
+   so the page is always readable without JavaScript. */
+
+:root {
+  /* Same spring as the reference site (stiffness 100, damping 20): fast, no bounce */
+  --spring: linear(0, 0.09 6.2%, 0.264 12.5%, 0.442 18.8%, 0.594 25%, 0.713 31.2%, 0.801 37.5%,
+      0.864 43.8%, 0.908 50%, 0.939 56.2%, 0.96 62.5%, 0.973 68.8%, 0.983 75%, 0.989 81.2%,
+      0.993 87.5%, 0.995 93.8%, 1);
 }
-.fade-in {
-  animation: fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+@keyframes reveal-fade {
+  from { opacity: 0; }
 }
+@keyframes reveal-drop {
+  from { transform: translateY(-16px); }
+}
+@keyframes reveal-rise {
+  from { transform: translateY(20px); }
+}
+
+/* 1 + 2: scroll reveals and the homepage cascade (<Reveal>) */
+html.js .reveal {
+  opacity: 0;
+}
+html.js .reveal.in {
+  opacity: 1;
+  animation:
+    reveal-rise 0.8s var(--spring) var(--d, 0s) both,
+    reveal-fade 0.5s ease-out var(--d, 0s) both;
+}
+html.js .reveal[data-reveal="drop"].in {
+  animation-name: reveal-drop, reveal-fade;
+}
+
+/* 3: photo placeholder + fade-in (<Photo>) */
+@keyframes placeholder-pulse {
+  50% { background-color: color-mix(in srgb, var(--color-rule) 55%, var(--color-paper)); }
+}
+.img-wrap {
+  transition: background-color 0.4s ease;
+}
+html.js .img-wrap:not(:has(> img.loaded)) {
+  background-color: var(--color-rule);
+  animation: placeholder-pulse 1.6s ease-in-out infinite;
+}
+html.js .fade-img {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+html.js .fade-img.loaded {
+  opacity: 1;
+}
+
+/* 4: smooth cross-fade between pages (Chrome, Edge, Safari 18.2+; others switch normally) */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.3s;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .fade-in {
+  html.js .reveal,
+  html.js .fade-img {
+    opacity: 1;
+  }
+  html.js .reveal.in,
+  html.js .img-wrap {
     animation: none;
+  }
+  @view-transition {
+    navigation: none;
   }
 }
 
