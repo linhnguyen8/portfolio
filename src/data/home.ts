@@ -36,10 +36,10 @@ export const sections: Section[] = [
         { text: "Norman B. Leventhal Center for Advanced Urbanism", href: "https://lcau.mit.edu/" },
       ],
       [
-        "led teams to develop devices that solve problems like ",
+        "led teams to develop devices that solve problems ranging from ",
         { text: "improving localized climate forecasts", href: "/heatsync/" },
         " to ",
-        { text: "accelerating knee rehabilitation", href: "/gonio/" },
+        { text: "accelerating recovery after knee surgery", href: "/gonio/" },
       ],
       [
         "taught myself to code to develop an ",
