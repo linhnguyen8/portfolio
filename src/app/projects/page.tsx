@@ -46,7 +46,7 @@ export default function Projects() {
                   <span className="mb-1 block text-xs font-medium tracking-wider text-muted tabular-nums md:hidden">
                     {pad(i + 1)}
                   </span>
-                  <h2 className="text-xl font-normal lowercase">{p.title}</h2>
+                  <h2 className="text-xl font-normal">{p.title}</h2>
                   <p className="mt-1 text-sm text-muted lowercase">
                     {p.dates}
                     {p.course && <> · {p.course}</>}

@@ -17,7 +17,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const study = caseStudies.find((c) => c.slug === slug);
-  return { title: study ? `${study.title.toLowerCase()} — Linh Nguyen` : "Linh Nguyen" };
+  return { title: study ? `${study.title} — Linh Nguyen` : "Linh Nguyen" };
 }
 
 const pad = (n: number) => String(n).padStart(2, "0");
@@ -71,7 +71,7 @@ export default async function CaseStudyPage({ params }: Params) {
         <a href="/projects/" className="text-link">← projects</a>
       </Reveal>
       <Reveal variant="drop" delay={0.07}>
-        <h1 className="mt-10 text-3xl font-light tracking-wide lowercase">{study.title}</h1>
+        <h1 className="mt-10 text-3xl font-light tracking-wide">{study.title}</h1>
         {study.subtitle && <p className="mt-2 text-lg font-light">{study.subtitle}</p>}
         <p className="mt-1 text-sm text-muted lowercase">{study.meta}</p>
       </Reveal>
@@ -129,12 +129,12 @@ export default async function CaseStudyPage({ params }: Params) {
 
       <nav aria-label="More projects" className="flex flex-wrap justify-between gap-4 border-t border-rule pt-8 text-sm">
         {prev ? (
-          <a href={`/${prev.slug}/`} className="text-link">← {prev.title.toLowerCase()}</a>
+          <a href={`/${prev.slug}/`} className="text-link">← {prev.title}</a>
         ) : (
           <span />
         )}
         {next ? (
-          <a href={`/${next.slug}/`} className="text-link">{next.title.toLowerCase()} →</a>
+          <a href={`/${next.slug}/`} className="text-link">{next.title} →</a>
         ) : (
           <a href="/projects/" className="text-link">all projects →</a>
         )}
