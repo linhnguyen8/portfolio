@@ -13,6 +13,16 @@ export const metadata: Metadata = {
   title: "Linh Nguyen",
   description: "Linh Nguyen — engineer building products with a human-centered approach.",
   icons: { icon: "/img/profile/face-icon.png" },
+  metadataBase: new URL("https://linhhnguyen.com"),
+  // Link preview (iMessage, Slack, LinkedIn, etc.)
+  openGraph: {
+    title: "Linh Nguyen",
+    url: "/",
+    siteName: "Linh Nguyen",
+    type: "website",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "LN monogram — Linh Nguyen" }],
+  },
+  twitter: { card: "summary_large_image", title: "Linh Nguyen", images: ["/og.png"] },
 };
 
 export const viewport: Viewport = {
