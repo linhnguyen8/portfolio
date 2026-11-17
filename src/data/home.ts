@@ -12,7 +12,7 @@ export const sections: Section[] = [
     title: "currently",
     items: [
       [
-        "i operate on the simple notion of trying to make the world a bit better by finding solutions to hard problems. typically, i commit to an initiative - then i figure out the rest of the components.",
+        "i try to live by a simple idea: seek out hard problems worth solving, in hopes of making the world a little better. typically, i commit to an initiative - then i figure out the rest of the components.",
       ],
       [
         "partnership integrations @ ",
